@@ -1,6 +1,6 @@
 import { Form } from "./inputSearch";
 
-export const InputSearch = () => {
+export const InputSearch = ({ showProducts }) => {
   return (
     <Form onSubmit={(event) => event.preventDefault()}>
       <input
@@ -8,12 +8,9 @@ export const InputSearch = () => {
         type="text"
         placeholder="Digitar pesquisa"
         id="description"
-        // value={userInputDescription}
-        //onChange={(event) => setUserInputDescription(event.target.value)} //evento onChange captura value do input e atualiza o state
+        onChange={(event) => showProducts(event.target.value)}
       />
-      <button className="buttonSearch" onClick={"olá"} type="submit">
-        Pesquisar
-      </button>
+      <button className="buttonSearch">Pesquisar</button>
     </Form>
   );
 };

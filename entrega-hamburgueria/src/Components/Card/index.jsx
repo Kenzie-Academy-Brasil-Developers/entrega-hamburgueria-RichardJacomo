@@ -1,4 +1,4 @@
-export const Product = ({ product }) => {
+export const Product = ({ product, handleClick }) => {
   return (
     <>
       <li>
@@ -8,16 +8,15 @@ export const Product = ({ product }) => {
         <div className="div-description">
           <h2>{product.name}</h2>
           <p>{product.category}</p>
-          <span>R$ {product.price}</span>
-          <button>Adicionar</button>
+          <span>
+            {product.price.toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </span>
+          <button onClick={() => handleClick(product.id)}>Adicionar</button>
         </div>
       </li>
     </>
   );
 };
-
-// li possui img(product.img)
-// h2(product.name)
-// p (product.category)
-// span preço (product.price)
-//button Adicionar (recebe evento para adicionar ao carrinho)
