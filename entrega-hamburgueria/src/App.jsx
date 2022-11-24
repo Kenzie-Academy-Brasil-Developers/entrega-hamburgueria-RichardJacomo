@@ -1,4 +1,3 @@
-import "./App.css";
 import GlobalStyle from "./styles/global";
 import { useState, useEffect } from "react";
 import { ProductList } from "./Components/ProductList";
