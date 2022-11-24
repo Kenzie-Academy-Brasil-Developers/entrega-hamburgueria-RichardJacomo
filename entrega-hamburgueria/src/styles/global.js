@@ -46,5 +46,76 @@ button {
     margin: 22px;
   }
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
+.section-products {
+  width: 1035px;
+}
+.aside-cart {
+  margin-top: 30px;
+  background-color: var(--grey-1);
+  max-width: 365px;
+  width: 100%;
+  height: 224px;
+  border-radius: var(--radius-02);
+  overflow: hidden;
+}
+.head-cart {
+  background-color: var(--color-primary);
+  height: 63px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.cart-title {
+  color: white;
+  font-size: var(--font-size-2);
+}
+.div-advice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.advice-title {
+  font-size: var(--font-size-2);
+  margin-bottom: 10px;
+}
+.advice-text {
+  color: var(--grey-3);
+}
+.cart {
+  margin-top: 30px;
+  max-width: 365px;
+  width: 100%;
+  height: 580px;
+  background-color: var(--grey-1);
+  border-radius: var(--radius-02);
+  overflow: hidden;
+}
+.div-content {
+  overflow: hidden;
+  height: 420px;
+}
+.div-head-cart {
+  background-color: var(--color-primary);
+  height: 63px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.div-head-cart > h2 {
+  color: white;
+  font-size: var(--font-size-2);
+}
+@media (max-width: 800px) {
+  .cart {
+    max-width: 90%;
+    margin: 22px;
+  }
+}
+
 `;
 export default GlobalStyle;

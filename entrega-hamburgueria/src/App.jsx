@@ -41,9 +41,9 @@ function App() {
       setProductsCart([...productsCart, newProduct]);
     }
   }
+
   function deleteProduct(item) {
-    const filtered = productsCart.filter((e) => e !== item);
-    setProductsCart(filtered);
+    setProductsCart(productsCart.filter((e) => e !== item));
   }
 
   return (
